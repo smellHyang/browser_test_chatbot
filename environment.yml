@@ -1,0 +1,13 @@
+name: browser-test-bot
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - selenium
+  - webdriver_manager
+  - time
+  - beautifulsoup4
+  - python-dotenv
+  - boto3
+prefix: /opt/conda/envs/browser-test-bot
