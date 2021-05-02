@@ -1,9 +1,8 @@
-import json
 class KaKaoWorkBlockBuiler:
     def __init__(self):
         self.items = []
-        self.headerTitle = '';
-        self.headerColor = '';
+        self.headerTitle = ''
+        self.headerColor = ''
 
     def setHeaderBlock(self, title, color = 'blue'):
         self.headerTitle = title
@@ -14,18 +13,18 @@ class KaKaoWorkBlockBuiler:
             'type': 'text',
             'text': text,
             'markdown': isMarkDown  
-        });
+        })
 
     def addDividerBlock(self):
         self.items.append({
             'type': 'divider'
-        });
+        })
 
     def addImageLinkBlock(self, imgUrl):
         self.items.append({
             'type': 'image_link',
             'url' : imgUrl
-        });
+        })
 
     def addSectionBlock(self, text, imgUrl, isMarkDown = True):
         self.items.append({
@@ -39,7 +38,21 @@ class KaKaoWorkBlockBuiler:
                 'type': 'image_link',
                 'url' : imgUrl
             }
-        });
+        })
+
+    def addContextBlock(self, text, imageUrl = "https://t1.kakaocdn.net/kakaowork/resources/block-kit/context/xls@3x.png", isMarkDown = True):
+        self.items.append({
+            'type': 'context',
+            'content': {
+                'type': 'text',
+                'text': text,
+                'markdown': isMarkDown
+            },
+            'image': {
+                'type': 'image_link',
+                'url' : imageUrl
+            }
+        })
 
     def addDescriptionBlock(self, term, text, isMarkDown = True, isAccent = True):
         self.items.append({
@@ -51,7 +64,7 @@ class KaKaoWorkBlockBuiler:
                 'markdown': isMarkDown  
             },
             'accent': isAccent
-        });
+        })
 
     def toBlock(self):
         blocks = self.items if self.headerTitle == '' else [{

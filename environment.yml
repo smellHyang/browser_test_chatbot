@@ -1,13 +1,18 @@
-name: browser-test-bot
+name: base
 channels:
   - conda-forge
+  - bjrn
   - defaults
 dependencies:
+  - conda
   - python=3.8
-  - selenium
-  - webdriver_manager
-  - time
-  - beautifulsoup4
+  - webdriver_manager=3.2.2
+  - selenium=3.141.0
+  - time=1.8
   - python-dotenv
-  - boto3
-prefix: /opt/conda/envs/browser-test-bot
+  - opencv=4.5.2
+  - numpy=1.20.2
+  - pyvirtualdisplay=2.1
+  - boto3=1.17.62
+  - pytz
+prefix: /opt/conda

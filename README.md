@@ -1,1 +1,1 @@
-# browser_test_chatbot
+# browser-test-bot

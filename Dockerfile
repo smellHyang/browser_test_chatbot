@@ -1,30 +1,31 @@
-FROM repo:tag
+# Linux amb64 https://hub.docker.com/r/continuumio/miniconda3
+FROM continuumio/miniconda3
+
+# 크롬 설치
+RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# exit 0; 성공했다고 가정
+RUN dpkg -i ./google-chrome-stable_current_amd64.deb; exit 0 
+RUN apt-get update
+# fix dependecies
+RUN apt-get -f --yes install
+RUN dpkg -i ./google-chrome-stable_current_amd64.deb
+RUN rm ./google-chrome-stable_current_amd64.deb
+
+# X virtual Framebuffer / X 윈도우 GUI
+RUN apt-get install --yes xvfb x11-xkb-utils
+RUN apt-get install --yes xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic
+
+# 한글 폰트 설치
+RUN apt-get install -y fonts-nanum
+RUN fc-cache -f -v
 
 # git clone
-
-# TODO 크롬 설치 대체
-# 아래 링크는 git clone 시 루트 파일로 대체 가능!
-# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-# dpkg -i ./google-chrome-stable_current_amd64.deb
-# apt-get update
-# apt --fix-broken install 
-# dpkg -i google-chrome-stable_current_amd64.deb
-# dpkg -l | grep chrome
+RUN git clone https://github.com/smellHyang/browser_test_chatbot.git
 
 # conda 설정
-RUN conda create --name browser-test-bot python=3.8
-RUN conda env list
 RUN conda init
-# RUN conda activate browser-test-bot ㄷ
 RUN conda config --add channels conda-forge
+RUN conda config --add channels bjrn
 RUN conda config --set channel_priority strict
 
-# TODO 
-RUN conda install -c bjrn webdriver_manager
-RUN conda install selenium
-RUN conda install time
-RUN conda install beautifulsoup4
-RUN conda install python-dotenv
-
-# TODO
 CMD ["/bin/bash"]

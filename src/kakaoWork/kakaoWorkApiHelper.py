@@ -1,22 +1,14 @@
 import requests
 import json
 import os
-from os.path import join, dirname, abspath
 from dotenv import load_dotenv
-
-
-dotenv_path = join(dirname('__file__'), '.env')
-load_dotenv(dotenv_path,  verbose=True)
-
-KAKAO_WORK_BOT_1_KEY = os.getenv("KAKAO_WORK_BOT_1_KEY")
 
 class KakaoWorkApiHelper:
     def __init__(self):
+        load_dotenv()
         self.token = ""
         self.KAKAO_WORK_URL = "https://api.kakaowork.com/v1/"
-        self.KAKAO_WORK_KEY = KAKAO_WORK_BOT_1_KEY
-        #self.KAKAO_WORK_KEY = 'fcc51469.9a8a4a0ac62c4fd19cebc97c61511763'
-        #self.KAKAO_WORK_KEY = 'b003ce81.566ec4094de04f419701127f6b75b471'
+        self.KAKAO_WORK_KEY = os.getenv("KAKAO_WORK_BOT_1_KEY")
     
     def makeConversation(self, userIds):
         url = self.KAKAO_WORK_URL + "conversations.open"
