@@ -1,11 +1,9 @@
 name: base
 channels:
   - conda-forge
-  - bjrn
   - defaults
 dependencies:
   - python=3.8
-  - webdriver_manager=3.2.2
   - selenium=3.141.0
   - time=1.8
   - python-dotenv
