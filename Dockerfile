@@ -26,8 +26,8 @@ RUN git clone https://github.com/smellHyang/browser_test_chatbot.git
 RUN conda update -n base -c defaults conda
 RUN conda init
 RUN conda config --add channels conda-forge
-RUN conda config --add channels bjrn
 RUN conda config --set channel_priority strict
+RUN conda install -c bjrn webdriver_manager
 
 
 CMD ["/bin/bash"]
