@@ -21,7 +21,7 @@ AWS_S3_KAKAO_WORK_BUCKET_NAME=
 python -m unittest test-run
 ```
 
-https://user-images.githubusercontent.com/73684562/116816013-3efd4b80-ab9b-11eb-9af4-3dbd3a2f7cfb.png
+![image](https://user-images.githubusercontent.com/73684562/116816085-7ff56000-ab9b-11eb-93d0-d92680dd2593.png)
 
 ### Issue 및 해결 방안
 
