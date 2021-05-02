@@ -23,9 +23,11 @@ RUN fc-cache -f -v
 RUN git clone https://github.com/smellHyang/browser_test_chatbot.git
 
 # conda 설정
+RUN conda update -n base -c defaults conda
 RUN conda init
 RUN conda config --add channels conda-forge
 RUN conda config --add channels bjrn
 RUN conda config --set channel_priority strict
+RUN conda config —set safety_checks disabled
 
 CMD ["/bin/bash"]
