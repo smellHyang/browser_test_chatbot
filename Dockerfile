@@ -19,8 +19,6 @@ RUN apt-get install --yes xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyri
 RUN apt-get install -y fonts-nanum
 RUN fc-cache -f -v
 
-# git clone
-RUN git clone https://github.com/smellHyang/browser_test_chatbot.git
 
 # conda 설정
 RUN conda update -n base -c defaults conda
