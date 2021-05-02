@@ -87,6 +87,7 @@ class BrowserTest(unittest.TestCase):
         deleteBtn = webDriver.find_element_by_xpath('//*[@id="root"]/div[1]/main/section[2]/article/div[2]/div[2]/button[2]');
         deleteBtn.click()
         webDriver.implicitly_wait(5)
+        time.sleep(10)
         modalDeleteBtn = webDriver.find_element_by_xpath('//*[@id="root"]/div[1]/main/section[2]/article/div[4]/div/div/button[2]')
         modalDeleteBtn.click()
         webDriver.implicitly_wait(20)
