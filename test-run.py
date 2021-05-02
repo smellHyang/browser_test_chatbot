@@ -119,7 +119,7 @@ class BrowserTest(unittest.TestCase):
         blockKitJsonEl = webDriver.find_element_by_xpath('//*[@id="root"]/div[1]/main/section[2]/article/div[3]/div[2]/div/div[1]/div[2]/div[1]/div[4]')
 
         # step 2 - Header Block (in Nav) Click
-        time.sleep(3)
+        time.sleep(6)
         self.testScenario.addStep("Header Block (in Nav) Click")
         print("RUN - Header Block (in Nav) Click")
         navBuilderBtn = webDriver.find_element_by_xpath('/html/body/div[1]/div[1]/main/section[1]/div[1]/button[1]')
@@ -133,7 +133,7 @@ class BrowserTest(unittest.TestCase):
         self.__clearBlock(webDriver)
 
         # step 3 - Text Block (in Nav) Click
-        time.sleep(3)
+        time.sleep(6)
         self.testScenario.addStep("Text Block (in Nav) Click")
         print("RUN - Text Block (in Nav) Click")
         navBuilderBtn = webDriver.find_element_by_xpath('/html/body/div[1]/div[1]/main/section[1]/div[1]/button[2]')
