@@ -26,6 +26,11 @@ python -m unittest test-run
 ![image](https://user-images.githubusercontent.com/73684562/116816085-7ff56000-ab9b-11eb-93d0-d92680dd2593.png)
 
 
+### 시나리오 contents
+1. Block Kit Builder 접속 (https://www.kakaowork.com/block-kit-builder)
+2. 메뉴의 [Header Block] 클릭 시 미리보기 화면의 이미지 및 텍스트 박스에 정확한 정보 입력되었는지 체크(성공)
+3. 메뉴의 [Text Block] 클릭 시 미리보기 화면의 이미지 및 텍스트 박스에 정확한 정보 입력되었는지 체크(실패)
+4. 테스트 실패 시 설정한 이메일 기준 그룹대화 창 오픈 및 알람 발생
 
 
 ### Issue 및 해결 방안
