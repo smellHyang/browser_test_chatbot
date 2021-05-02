@@ -6,6 +6,9 @@
 # install Container
 docker run -i -t dlgiddk10/kakaowork:1.0
 
+# git clone
+git clone https://github.com/smellHyang/browser_test_chatbot.git
+
 # 패키지 설치
 cd browser_test_chatbot
 conda env update -f ./environment.yml
