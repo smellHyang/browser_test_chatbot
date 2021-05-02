@@ -28,6 +28,6 @@ RUN conda init
 RUN conda config --add channels conda-forge
 RUN conda config --add channels bjrn
 RUN conda config --set channel_priority strict
-RUN conda config —set safety_checks disabled
+
 
 CMD ["/bin/bash"]
