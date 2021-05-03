@@ -19,6 +19,8 @@ RUN apt-get install --yes xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyri
 RUN apt-get install -y fonts-nanum
 RUN fc-cache -f -v
 
+#문서 편집 
+RUN apt install vim
 
 # conda 설정
 RUN conda update -n base -c defaults conda
