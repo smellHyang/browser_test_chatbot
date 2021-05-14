@@ -56,3 +56,7 @@ python -m unittest test-run
 - 동영상 생성 시 스크린 샷으로 생성하는데 프레임 수(20)에 맞게 sleep 추가 또는 동영상 생성 방법 변경
 - 테스트 케이스 실패 처리 시 Unittest TestResult 객체의 addFailure / addError 메소드를 활용하여 개선하면 더 좋을 것 같음
 - 괜찮은 테스트 시나리오(실무 관련)가 있어 좀 더 디테일하게
+
+
+###화면결과
+https://user-images.githubusercontent.com/73684562/118298135-0b66dd80-b51a-11eb-976f-5feca00f2d6a.jpeg
