@@ -60,6 +60,7 @@ python -m unittest test-run
 
 ### 화면결과
 
-- ![테스트결과_화면결과1](https://user-images.githubusercontent.com/73684562/118298135-0b66dd80-b51a-11eb-976f-5feca00f2d6a.jpeg)
-- ![테스트결과_화면결과2](https://user-images.githubusercontent.com/73684562/118298142-0dc93780-b51a-11eb-867c-ce24be35a104.jpeg)
+- ![테스트결과_화면결과1](https://user-images.githubusercontent.com/73684562/118299102-4c132680-b51b-11eb-954d-b34866b69986.jpeg)
+- ![테스트결과_화면결과2](https://user-images.githubusercontent.com/73684562/118299216-706f0300-b51b-11eb-912d-9ff7d6d4d61d.jpeg)
+
 
