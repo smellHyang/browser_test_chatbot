@@ -48,7 +48,7 @@ python -m unittest test-run
     - 한글 시스템 폰트를 별도로 설치
 - python opencv 사용하여 Record 파일 생성 시 Image 관련 클래스(Pillow, Python Imaging Library)를 사용할 수 없었던 이슈
     - Xvfb (화면 출력을 표시하지 않고 가상 메모리에서 모든 그래픽 작업을 수행하는 X11 디스플레이 서버)  설치 및 pyvirtualdisplay 패키지를 통해 Xvfb 가상 환경 셋팅
-    - [https://github.com/ponty/pyvirtualdisplay/tree/2.1](https://github.com/ponty/pyvirtualdisplay/tree/2.1)
+    - [[참조](https://github.com/ponty/pyvirtualdisplay/tree/2.1)]
 
 ### 아쉬운 점
 
