@@ -58,5 +58,8 @@ python -m unittest test-run
 - 괜찮은 테스트 시나리오(실무 관련)가 있어 좀 더 디테일하게
 
 
-###화면결과
-https://user-images.githubusercontent.com/73684562/118298135-0b66dd80-b51a-11eb-976f-5feca00f2d6a.jpeg
+### 화면결과
+
+- ![테스트결과_화면결과1](https://user-images.githubusercontent.com/73684562/118298135-0b66dd80-b51a-11eb-976f-5feca00f2d6a.jpeg)
+- ![테스트결과_화면결과2](https://user-images.githubusercontent.com/73684562/118298142-0dc93780-b51a-11eb-867c-ce24be35a104.jpeg)
+
