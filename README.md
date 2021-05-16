@@ -51,7 +51,6 @@ python -m unittest test-run
 
 ### 아쉬운 점
 
-- 카카오 블록 킷 웹페이지 처음 접속 시 가이드 UI 뜨는 문제 해결 방안 (LocalStorage SetItem)
 - 동영상 생성 시 스크린 샷으로 생성하는데 프레임 수(20)에 맞게 sleep 추가 또는 동영상 생성 방법 변경
 - 테스트 케이스 실패 처리 시 Unittest TestResult 객체의 addFailure / addError 메소드를 활용하여 개선하면 더 좋을 것 같음
 - 괜찮은 테스트 시나리오(실무 관련)가 있어 좀 더 디테일하게
